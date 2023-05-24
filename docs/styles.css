@@ -1,0 +1,123 @@
+body{
+  background-color: #FFFFFF;
+}
+h4,b{color: #2F80ED;}
+h1{
+  font-family: 'Roboto Mono', monospace;
+  text-align: center;
+}
+a{
+  text-decoration: none;
+}
+/*3  divisons under container :- main flx-cont cont*/
+.container {
+  display: flex;
+} 
+/* main used for timeline  */
+.main
+{
+  width: 10%;
+}
+/* used to display the chapter names */
+.flx-cont
+{ 
+    text-align: center;
+    margin: 10px;
+    width: 400px;
+}
+/* cont used for dymanically displaying the data  */
+.cont
+  {
+    margin: 15px;
+    border: solid black 1px;
+    border-color: blue;
+    border-radius: 25px;
+    height:280px ;
+    padding: 10px;
+    box-shadow: 0 0 10px #9ecaed;
+  }
+.flx-itm
+{  
+    display: flex;
+    align-items: center;
+    padding : 10px 10px 0px 10px;
+    border: solid black 1px;
+    border-color: blue;
+    border-radius: 25px;
+    height: 50px;
+    width: 80%;
+    text-align: center;
+    margin: 10px;
+    cursor: grab;
+    background-color: #FAFAFA;
+}
+.flx-itm:hover
+{  
+  box-shadow: 0 0 10px #9ecaed;
+  
+}
+.flx-itm img {
+  margin-left: auto;
+}
+.content/*Div*/
+{
+  margin: 15px;
+  width: 300px;
+  font-weight: bold;
+}
+  /* transitions for the syllabus showing   */
+  .transi
+  {
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+  @keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
+/* Time Line */
+.element {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ }
+ 
+ .circle {
+  width: 20px;
+    height: 20px;
+    border: 2px solid  #2F80ED;
+    border-radius: 50%;
+    background-color: white;
+    transition: all 0.5s ease;
+ }
+ 
+ .circle-black {
+  background-color:  #2F80ED;
+ }
+ 
+ .vline {
+  color:  #2F80ED;
+  border-left: 3px solid;
+  height: 50px;
+ }
+ .circle-blue{
+  width: 30px;
+    height: 30px;
+    border-width: 4px;
+    background-color:  #2F80ED;
+  }
+  .concentric{
+    width:30px;
+    height:30px;
+    border-radius:50%;
+    background-color: #2F80ED;
+    background-clip:content-box;
+    padding:4px;
+    border:3px solid #2F80ED;
+}
